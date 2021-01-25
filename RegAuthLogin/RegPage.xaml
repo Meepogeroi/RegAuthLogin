@@ -1,0 +1,24 @@
+﻿<Page x:Class="RegAuthLogin.RegPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegAuthLogin"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="RegPage">
+    <Grid Background="LightGray">
+        <Border Background="White" CornerRadius="25" Margin="15" VerticalAlignment="Center" Padding="30" MinWidth="400" MaxWidth="550">
+            <StackPanel>
+                <TextBlock Text="Registration" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" x:Name="test"/>
+                <Grid>
+                    <Button x:Name="Auth" Content="Auth" HorizontalAlignment="Left" Click="Auth_Click"/>
+                </Grid>
+                <TextBox x:Name="Login"/>
+                <PasswordBox x:Name="Pass"/>
+                <PasswordBox x:Name="RetPass"/>
+                <Button Margin="0 20" Content="Reg" x:Name="CompleteReg" Click="CompleteReg_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
